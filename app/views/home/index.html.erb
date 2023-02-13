@@ -1,0 +1,23 @@
+<div class = "jumbotron">
+    <h1 class = "text-center">Bienvenue sur The Gossip Project</h1>
+</div>
+<div class= "container">
+
+    <h2> Voici les gossips:</h2>
+
+    <% @gossip.each do |gossip| %>
+  <table class="table">
+      <td class="text-left"><%= gossip.user.first_name %></td>
+      <td class="text-center "><%= link_to  "#{gossip.title}", "/home/#{gossip.id}" %></td>
+  </table>
+<% end %>
+                  
+
+        
+
+
+
+        
+
+
+</div>
